@@ -69,12 +69,26 @@ const a = 10
 ## 数据类型
 es5有5种基本的数据类型：`Undefined`、`Null`、`Boolean`、`Number`、`String`和一个复杂的数据类型`Object`  
 es6新增了一个新的原始数据类型`Symbol`
-
-
-
-
-
-
+#### typeof操作符
+鉴于ECMAScript是松散类型的，因此需要一种手段来检测给定变量的数据类型——typeof就是负责提供这方面的操作符。对一个值使用typeof操作符可能返回一下某个字符串
+```js
+'undefined' —— 如果这个值未定义
+'boolean' —— 如果这个值是布尔值
+'string' —— 如果这个值是字符串
+`number` —— 如果这个值是数值
+`object` —— 如果这个值是对象或者null
+`function` —— 如果这个值是函数
+`symbol` —— 如果这个值是`Symnol`类型
+```
+> 函数具有一些特殊的属性，因此通过typeof操作符来区分函数和其他对象是有必要的
+#### Undefined类型
+`Undefined`类型只有一个值，即特殊的`undefined`
+```js
+let a;
+console.log(a); //undefined
+console.log(typeof a); //undefined
+```
+>一般而言，不存在需要显式地把一个变量设置为`undefined`值的情况，字面值`undefined`的主要作用是用于比较
 
 
 
