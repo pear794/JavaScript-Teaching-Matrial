@@ -88,7 +88,38 @@ let a;
 console.log(a); //undefined
 console.log(typeof a); //undefined
 ```
->一般而言，不存在需要显式地把一个变量设置为`undefined`值的情况，字面值`undefined`的主要作用是用于比较
+>一般而言，不存在需要显式地把一个变量设置为`undefined`值的情况，字面值`undefined`的主要作用是用于比较  
+
+```js
+let message;
+//下面这个变量并没有声明
+//let name
+console.log(typeof message) // undefined
+console.log(message) // undefined
+console.log(typeof name) //undefined
+console.log(name) // Uncaught ReferenceError: name is not defined
+```
+>对于尚未声明过的变量，只能执行`typeof`操作符检测其数据类型，对未初始化和未声明的变量执行`typeof`操作符都返回了`undefined`值
+#### Null类型
+`Null`类型是第二个只有一个之值的数据类型，这个特殊的值是`null`。
+`null`值表示一个空指针，用typeof操作符检测null会返回`object`
+```js
+let msg = null;
+console.log(typeof msg) // "object"
+```
+>如果定义的变量是准备在将来用于保存对象，那么最好将变量初始化为`null`而不是其他值
+#### Boolean类型
+`Boolean`类型是ECMAScript中使用的最多的一种类型，该类型只有两个字面量：`true`和`false`  
+需要注意的是，`Boolean`类型的字面值`true`和`false`是区分大小写的，也就是说`True`和`False`都不是`Boolean`值，只是标识符
+```js
+let message = "hello word"
+if(message){
+  console.log("你好，世界") //你好，世界
+}
+```
+最后会打印出结果是因为字符串message被自动转换成了对应的`Boolean`值
+
+
 
 
 
