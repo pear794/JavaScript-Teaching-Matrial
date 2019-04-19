@@ -91,9 +91,9 @@ console.log(typeof a); //undefined
 >一般而言，不存在需要显式地把一个变量设置为`undefined`值的情况，字面值`undefined`的主要作用是用于比较  
 
 ```js
-let message;
-//下面这个变量并没有声明
-//let name
+let message; 
+//下面这个变量并没有声明 
+//let name 
 console.log(typeof message) // undefined
 console.log(message) // undefined
 console.log(typeof name) //undefined
@@ -118,6 +118,11 @@ if(message){
 }
 ```
 最后会打印出结果是因为字符串message被自动转换成了对应的`Boolean`值
+
+
+
+
+
 
 
 
