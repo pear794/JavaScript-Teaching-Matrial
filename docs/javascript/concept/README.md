@@ -114,10 +114,10 @@ console.log(typeof msg) // "object"
 ```js
 let message = "hello word"
 if(message){
-  console.log("你好，世界") //你好，世界
-}
+  console.log("你好，世界") //你好，世界 
+} 
 ```
-最后会打印出结果是因为字符串message被自动转换成了对应的`Boolean`值
+最后会打印出结果是因为字符串message被自动转换成了对应的`Boolean`值 
 
 
 
