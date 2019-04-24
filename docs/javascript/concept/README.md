@@ -101,7 +101,7 @@ console.log(name) // Uncaught ReferenceError: name is not defined
 ```
 >对于尚未声明过的变量，只能执行`typeof`操作符检测其数据类型，对未初始化和未声明的变量执行`typeof`操作符都返回了`undefined`值
 #### Null类型
-`Null`类型是第二个只有一个之值的数据类型，这个特殊的值是`null`。
+`Null`类型是第二个只有一个值的数据类型，这个特殊的值是`null`。
 `null`值表示一个空指针，用typeof操作符检测null会返回`object`
 ```js
 let msg = null;
@@ -126,6 +126,7 @@ let float1 = 1.1;
 let float2 = 0.1
 let float3 = .1 //有效但不推荐
 ```
+我真的好累
 
 
 
